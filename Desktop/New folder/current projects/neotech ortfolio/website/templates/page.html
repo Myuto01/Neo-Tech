@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home| NEO-TECH</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="website\static\img2.jpg" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+          
+            <style>
+           header {
+            background-image: url('/static/img11.jpg');
+            background-size: cover; /* or contain */
+            background-repeat: no-repeat;
+            height: 100%; /* adjust to fit your header size */
+            width: 100%;
+            padding-bottom: 90px;
+            position: relative;
+   
+        }
+
+        body {
+            background-image: url('/static/img8.jpg');
+            background-size: cover; /* or contain */
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+        }
+
+        .text-with-bg{
+           background-image: url('/static/img16.jpg');
+           background-repeat: no-repeat;
+           color: transparent;
+           background-clip: text;
+           -webkit-background-clip: text;
+        
+        }
+
+        .text-with-bg{
+                                background-image: url('/static/img14.jpg');
+                                background-repeat: repeat-x;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                background-size: cover;
+                                animation: moveBg 5s linear infinite;
+                                -webkit-animation: moveBg 5s linear infinite;
+                           
+                            }
+
+                            @keyframes moveBg {
+                       from {
+                              background-position: 0% 30%; /* Start position */
+                            }
+                        to {
+                              background-position: 100% 50%; /* End position */
+                            }
+                            }
+
+    @media screen and (max-width: 600px) {
+        body {
+            background-image: url('/static/im11.jpg');
+            background-size: cover; /* or contain */
+            background-repeat: no-repeat;
+            
+        }
+   
+    
+    
+   }
+    </style>
+        
+          
+    
+    
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+            <div class="container px-5">
+                 
+                 <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img8.jpg') }}" alt="img8"  > </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </head>
+        <body style="background-image: url({{ url_for('static', filename='img8.jpg') }})">
+  
+        <!-- Header--> 
+        <header class="container px-5" img src="{{ url_for('static', filename='img8.jpg') }}" alt="img13"  >
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            
+                         
+                           <h1 class="text-with-bg fw-bolder">NEO-TECH</h1>
+                        
+                           <p class="lead text-white mb-4">Welcome to the  <strong>NEO-TECH</strong> website.<br><br> NEO-TECH the number one technology company in Africa. It exists to help Africans live a better and easier life. </p>
+                           
+                           <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="/contact">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Features section-->
+        <section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-calendar-range"></i></div>
+                        <h2 class="h4 fw-bolder text-primary mb-2">Book Meeting</h2>
+                        <p class="text-white mb-2" > Schedule a meeting with us to find out more on how we can help you. We can also discuss the  duration of the project as we always make sure to deliver on time and satisfy our clients.</p>
+                        <a class="text-decoration-none" href="/book_meeting">
+                            Book Now
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-journal-code"></i></div>
+                        <h2 class="h4 fw-bolder text-primary mb-2"> Portfolio</h2>
+                        <p class="text-white mb-2">We have worked on a number of projects leaving our clients happy. If you are struggling to make a decision on whether to work with us or not you can look at our Portfolio.</p>
+                        <a class="text-decoration-none" href="/portfolio">
+                            Browse
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cart"></i></div>
+                        <h2 class="h4 fw-bolder text-primary mb-2">Products</h2>
+                        <p class="text-white mb-2">We also have a number of products that you can use to make your life better.<br> CLICK! for more.</p>
+                        <a class="text-decoration-none" href="/products">
+                            Browser
+                            <i class="bi bi-arrow-right bi-flip"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing section-->
+        <section class="bg-light py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder text-primary">Meeting Procedure</h2>
+                    <p class="lead text-danger mb-4">Only book a meeting when you have a project you want us to work on.<br> For questions, go to the contact page. </p>
+                    <!--  <p class="lead mb-0">With our no hassle pricing plans</p>-->
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <style>
+                        div{
+                            font-family: 'Bergen Mono',  monospace;
+                        }
+                  
+                        .text{
+                           padding: 50px;
+                           padding-right: 50px;
+                        }       
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0053FF;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    
+}
+
+button:hover {
+    background-color: #00f;
+    transform: scale(1.05);
+    align-items: center;
+}
+                      </style>
+                  <div class= "container"
+                  ><!---->
+                     <!--Change the number of words in the text and the animation will still work-->
+                     <div class="text" style="color:black;">Step1:  Schedule a meeting with us by clicking the "Book Meeting" icon above.<br>
+                        <br>Step2: Enter the date and time you would like the meeting to take place.<br>
+                        <br>Step3: Once you have booked the meeting, <strong>NEO-TECH</strong>  will contact you immediately to confirm the date and time.<br>
+                        <br>Step4: On the day of the meeting, you are expected to be ready by the time scheduled.<br>
+                        <br>Step5: During the meeting your project will be discussed in detail as well as the time it will take to complete the project.<br>
+                        <a href="/book_meeting"><button class="blue-pill-button">Book Meeting</button></a>
+                </div>
+                     <!-------------------------------------->
+                  </div>   
+                  
+                </div>
+            </div>
+        </section>
+    
+   
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder text-primary mb-2">Customer Testimonials</h2>
+                    <p class="lead mb-0 text-white mb-2">Our customers love working with us</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- Testimonial 1-->
+                        <div class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                                        <div class="small text-muted">- Mapalo Chiti, Zambia</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2-->
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
+                                        <div class="small text-muted">- Andrew Mwango, Zambia</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact section-->
+        <section>
+            <div class="bg-white py-5">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                    <h2 class="fw-bolder text-primary mb-2">Get in touch</h2>
+                    <p class="lead mb-0 text-dark mb-2">We'd love to hear from you</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        
+                        <form id="contactForm" data-sb-form-api-token="c7e8c575-5360-42cf-943d-00797db509a2">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text"  data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email"  data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel"  data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text"  style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+       </section>
+        <!-- Footer-->
+        
+        <!------ Include the above in your HEAD tag ---------->
+        
+        
+        
+        <footer class="container-fluid bg-grey py-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-6 ">
+                       <div class="logo-part">
+                        <img src="{{ url_for('static', filename='img8.jpg') }}" alt="Logo" style="10%">
+                         <br> <p>Lusaka,Zambia</p>
+                           <p>Transforming Africa Through Technology</p>
+                       </div>
+                    </div>
+                    <div class="col-md-6 px-4">
+                       <h6> About Company</h6>
+                       <p>Trancending Technology In Africa.</p>
+                       <a href="/contact" class="btn-footer"> Contact Us</a><br>
+                       <a href="#" class="btn-footer">Top</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-6 px-4">
+                       <h6> Help us</h6>
+                       <div class="row ">
+                          <div class="col-md-6">
+                             <ul>
+                                <li> <a href="/"> Home</a> </li>
+                                <li> <a href="/about"> About</a> </li>
+                                <li> <a href="/services"> Services</a> </li>
+                                <li> <a href="/team"> Team</a> </li>
+                             </ul>
+                          </div>
+                          <div class="col-md-6 px-4">
+                             <ul>
+                                
+                                <li> <a href="/terms"> Terms</a> </li>
+                                <li> <a href="/policy"> Policy</a> </li>
+                                <li> <a href="/refund policy"> Refunds</a> </li>
+                               
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 ">
+                       <h6> Follow Us </h6>
+                       <div class="social">
+                          <a href="https://www.facebook.com/profile.php?id=100092160846165"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <a href="https://www.instagram.com/neotech_africa/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                          <a href="https://twitter.com/Neo1Tech"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                        </div>
+                      
+                       <p>&copy; 2023 NEO-TECH</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

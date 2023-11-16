@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>portfolio| NEO-TECH</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+          
+ <!-- Responsive navbar-->
+ <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/">
+        <img src="{{ url_for('static', filename='img8.jpg') }}" alt="img2"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                <li class="nav-item"><a  class="nav-link" href="/services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	<style>
+		.my-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+            margin: 1rem 0;
+		}
+		.item {
+			width: 30%;
+			margin-bottom: 20px;
+		}
+		.item img {
+			max-width: 100%;
+		}
+		.item h3 {
+			font-size: 20px;
+			margin-top: 10px;
+            color: 
+		}
+		.item p {
+			margin-top: 10px;
+			font-size: 16px;
+            color: 
+		}
+
+        .section-heading{
+            font-family: 'Bergen Mono',  monospace;
+            
+            font-weight: 600;
+        }
+
+        body {
+     background-image: url('/static/img7.jpg');
+     background-size: cover; /* or contain */
+     background-repeat: no-repeat;
+     height: 100%;
+     width: 100%;
+     
+ }
+ .second-link{
+        
+        font-size: large;
+    }
+    button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0053FF;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    
+}
+
+button:hover {
+    background-color: #00f;
+    transform: scale(1.05);
+    align-items: center;
+} 
+	</style>
+</head>
+
+<body style="background-image: url({{ url_for('static', filename='img7.jpg') }})">
+
+	<h1 class="section-heading" style="text-align: center;"> Portfolio</h1>
+
+	<div class="container other-class my-container">
+		<div class="item">
+			<img src="{{ url_for('static', filename='img9.jpg') }}"  >
+			<h3>Project 1</h3>
+			<p>Description of project 1.</p>
+            <a class="second-link" href="https://chat.openai.com/chat">ChatGPT</a>
+		</div>
+		<div class="item">
+			<img src="{{ url_for('static', filename='img9.jpg') }}"  >
+			<h3>Project 2</h3>
+			<p>Description of project 2.</p>
+            <a class="second-link" href="https://chat.openai.com/chat">ChatGPT</a>
+
+		</div>
+		<div class="item">
+			<img src="{{ url_for('static', filename='img9.jpg') }}"  >
+			<h3>Project 3</h3>
+			<p>Description of project 3.</p>
+            <a class="second-link"  href="https://chat.openai.com/chat">ChatGPT</a>
+		</div>
+		<div class="item">
+			<img src="{{ url_for('static', filename='img9.jpg') }}"  >
+			<h3>Project 4</h3>
+			<p>Description of project 4.</p>
+            <a class="second-link" href="https://chat.openai.com/chat">ChatGPT</a>
+		</div>
+		<div class="item">
+			<img src="{{ url_for('static', filename='img9.jpg') }}"  >
+			<h3>Project 5</h3>
+			<p>Description of project 5.</p>
+            <a class="second-link" href="https://chat.openai.com/chat">ChatGPT</a>
+		</div>
+		<div class="item">
+			<img src="{{ url_for('static', filename='img9.jpg') }}"  >
+			<h3>Project 6</h3>
+			<p>Description of project 6.</p>
+            <a class="second-link" href="https://chat.openai.com/chat">ChatGPT</a>
+		</div>
+      <a href="/book_meeting"><button class="blue-pill-button">Book Meeting</button></a>
+	</div>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+
+<footer class="container-fluid bg-grey py-5">
+<div class="container ">
+   <div class="row">
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img src="{{ url_for('static', filename='img8.jpg') }}" alt="Logo" style="10%">
+                   <br> <p>Lusaka,Zambia</p>
+                     <p>Transforming Africa Through Technology</p>
+               </div>
+            </div>
+            <div class="col-md-6 px-4">
+               <h6> About Company</h6>
+               <p>Trancending Technology In Africa.</p>
+               <a href="/contact" class="btn-footer"> Contact Us</a><br>
+               <a href="#" class="btn-footer">Top</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6 px-4">
+               <h6> Help us</h6>
+               <div class="row ">
+                  <div class="col-md-6">
+                     <ul>
+                        <li> <a href="/"> Home</a> </li>
+                        <li> <a href="/about"> About</a> </li>
+                        <li> <a href="/services"> Services</a> </li>
+                        <li> <a href="/team"> Team</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6 px-4">
+                     <ul>
+                        
+                        <li> <a href="/terms"> Terms</a> </li>
+                        <li> <a href="/policy"> Policy</a> </li>
+                        <li> <a href="/refund policy"> Refunds</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 ">
+               <h6> Follow Us</h6>
+               <div class="social">
+                  <a href="https://www.facebook.com/profile.php?id=100092160846165"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="https://www.instagram.com/neotech_africa/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="https://twitter.com/Neo1Tech"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+               </div>
+               
+               <p>&copy; 2023 NEO-TECH</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

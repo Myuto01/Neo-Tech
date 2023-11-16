@@ -1,0 +1,23 @@
+ if request.method == "POST":
+       name = request.form.get('name')
+       email =  request.form.get('email')
+       meeting_date = datetime.strptime( request.form.get('meeting_date'), '%Y-%m-%dT%H:%M')
+   
+    
+       meeting = Meeting(name=name, email=email, meeting_date=meeting_date)
+       db.session.add(meeting)
+       db.session.commit()
+       db.init_app(app)
+       flash("Meeting booked successfully!",  category="success")
+
+    return render_template('booking.html')
+
+    2.   name = request.form['name']
+    email = request.form['email']
+    meeting_date = datetime.strptime(request.form['meeting_date'], '%Y-%m-%dT%H:%M')
+
+    meeting = Meeting(name=name, email=email, meeting_date=meeting_date)
+    db.session.add(meeting)
+    db.session.commit()
+
+    return "Meeting booked successfully!"
